@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeaderFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/lbl_title"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/DeepSkyBlue"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/navy"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgBack"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_Name"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/lbl_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Red_DarkRed"
+            android:gravity="center"
+            android:text="HAL Completions Mfg Pte. Ltd [2088]"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_header" />
+
+        <TextView
+            android:id="@+id/lbl_header"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/Red_DarkRed"
+            android:gravity="center"
+            android:text="       HALLIBURTON"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imgMenu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@color/DeepSkyBlue"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_Name" />
+
+        <ImageView
+            android:id="@+id/imgMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/Red_DarkRed"
+            android:onClick="doClickMnu"
+            android:src="@drawable/ic_baseline_dehaze_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbl_header" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
